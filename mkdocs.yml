@@ -1,0 +1,84 @@
+site_name: OR6107
+site_url: https://OR6107.github.io/articles/
+repo_url: https://github.com/OR6107/articles/
+repo_name: OR6107/articles
+site_author: OR6107
+site_description: >-
+  OR6107
+theme:
+  name: material
+  # custom_dir: overrides
+  language: ja
+  icon:
+    logo: material/book
+    repo: fontawesome/brands/git-alt
+  favicon: assets/img/favicon.ico
+  features:
+    - navigation.tabs
+  palette:
+    # accent:
+    # primary:
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/OR6107/articles/
+
+markdown_extensions:
+  # extension for syntax highlight
+  # - codehilite
+  # - codehilite:
+  #     linenums: true
+
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  # - https://polyfill.io/v3/polyfill.min.js?features=es6
+  # - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search
+  # - macros
+  # - git-revision-date-localized
+
+nav:
+  - Home: index.md
+  - TeX:
+      - 目次: tex/index.md
+      - 入門編:
+          - はじめに: tex/beginner/index.md
+      - その他の記事: tex/other/index.md
