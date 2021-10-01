@@ -82,3 +82,5 @@ nav:
       - 入門編:
           - はじめに: tex/beginner/index.md
       - その他の記事: tex/others/index.md
+
+edit_uri: edit/main/docs/
