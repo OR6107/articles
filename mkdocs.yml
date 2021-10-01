@@ -81,4 +81,4 @@ nav:
       - 目次: tex/index.md
       - 入門編:
           - はじめに: tex/beginner/index.md
-      - その他の記事: tex/other/index.md
+      - その他の記事: tex/others/index.md
