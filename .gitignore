@@ -1,5 +1,6 @@
 # For Editor
 .vscode
+.log
 
 # For mkdocs
 site
